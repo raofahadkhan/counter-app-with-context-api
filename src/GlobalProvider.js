@@ -1,5 +1,8 @@
 import React, { useContext, useReducer } from "react";
 import AppReducer from "./AppReducer";
+import Decrement from "./components/Decrement";
+import Increment from "./components/Increment";
+import Reset from "./components/Reset";
 import { myContext } from "./myContext";
 import { DECREMENT, INCREMENT, RESET } from "./types";
 
@@ -23,7 +26,13 @@ export const GlobalProvider = ({ children }) => {
         resetCount,
       }}
     >
-      {children}
+      <div className="App">
+        <h1>Counter App With Context Api</h1>
+        <h3>{state.count}</h3>
+        <Increment />
+        <Decrement />
+        <Reset />
+      </div>
     </myContext.Provider>
   );
 };
