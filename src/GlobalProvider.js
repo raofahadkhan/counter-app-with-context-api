@@ -4,7 +4,7 @@ import { myContext } from "./myContext";
 import { DECREMENT, INCREMENT, RESET } from "./types";
 
 export const GlobalProvider = ({ children }) => {
-  const { initial_state } = useContext(myContext);
+  const initial_state = useContext(myContext);
 
   const [state, dispatch] = useReducer(AppReducer, initial_state);
 

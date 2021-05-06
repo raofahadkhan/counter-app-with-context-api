@@ -7,12 +7,12 @@ import { GlobalProvider } from "./GlobalProvider";
 import { myContext } from "./myContext";
 
 function App() {
-  const { initial_state } = useContext(myContext);
+  const { count } = useContext(myContext);
   return (
     <GlobalProvider>
       <div className="App">
         <h1>Counter App With Context Api</h1>
-        {/* <h3>{initial_state.count}</h3> */}
+        <h3>{count}</h3>
         <Increment />
         <Decrement />
         <Reset />
