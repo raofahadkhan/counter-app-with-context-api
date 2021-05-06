@@ -5,7 +5,7 @@ const Decrement = () => {
   const { decrementCount } = useContext(myContext);
   return (
     <div>
-      <button onClick={() => decrementCount}>Decrement</button>
+      <button onClick={() => decrementCount()}>Decrement</button>
     </div>
   );
 };

@@ -5,7 +5,7 @@ const Increment = () => {
   const { incrementCount } = useContext(myContext);
   return (
     <div>
-      <button onClick={() => incrementCount}>Increment</button>
+      <button onClick={() => incrementCount()}>Increment</button>
     </div>
   );
 };

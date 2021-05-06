@@ -5,7 +5,7 @@ const Reset = () => {
   const { resetCount } = useContext(myContext);
   return (
     <div>
-      <button onClick={() => resetCount}>Reset</button>
+      <button onClick={() => resetCount()}>Reset</button>
     </div>
   );
 };
